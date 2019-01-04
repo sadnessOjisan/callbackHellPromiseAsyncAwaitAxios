@@ -14,14 +14,20 @@
   <body>
     <ul class="todo-list"></ul>
     <script>
-      async function fetchData() {
+      async function getTodos() {
         const res = await axios.get("http://localhost:3000/todos");
+        return res;
+      }
+
+      async function renderTodo() {
+        const res = await getTodos();
         const data = res.data;
         for (d of data) {
           $(".todo-list").append(`<li>${d.task}</li>`);
         }
       }
-      fetchData();
+
+      renderTodo();
     </script>
   </body>
 </html>

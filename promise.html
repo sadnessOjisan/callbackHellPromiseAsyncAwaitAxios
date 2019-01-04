@@ -17,11 +17,12 @@
         method: "GET"
       })
         .then(res => {
-          res.json().then(data => {
-            for (d of data) {
-              $(".todo-list").append(`<li>${d.task}</li>`);
-            }
-          });
+          return res.json();
+        })
+        .then(data => {
+          for (d of data) {
+            $(".todo-list").append(`<li>${d.task}</li>`);
+          }
         })
         .catch(err => console.log(err));
     </script>
