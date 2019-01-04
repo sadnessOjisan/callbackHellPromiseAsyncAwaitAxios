@@ -4,7 +4,7 @@ API から data を取ろう勉強会の資料
 
 ## サンプルコード
 
-(https://github.com/sadnessOjisan/JSON-Now)[サーバー] を起動して、HTML を開くと動きます。
+[サーバー](https://github.com/sadnessOjisan/JSON-Now) を起動して、HTML を開くと動きます。
 
 ```
 $ git clone https://github.com/sadnessOjisan/JSON-Now.git
